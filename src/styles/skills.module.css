@@ -1,0 +1,24 @@
+.title {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.card {
+  margin: 0 1rem;
+  padding: 0 1.5rem;
+}

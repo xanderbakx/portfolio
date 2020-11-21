@@ -1,13 +1,35 @@
 import React from "react"
-import style from "../components/intro.module.css"
+import { graphql, useStaticQuery } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
 
-const Intro = () => (
-  <div className={style.hero}>
-    <div className={style.heroText}>
-      <h1>My name is Xander</h1>
-      <p>I'm a full stack developer.</p>
-    </div>
-  </div>
-)
+import style from "../styles/intro.module.css"
+
+const Intro = () => {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        hero: file(relativePath: { eq: "milky-way.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1920) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    `
+  )
+
+  const imgData = data.hero.childImageSharp.fluid
+  return (
+    <BackgroundImage Tag="section" className={style.hero} fluid={imgData}>
+      <div>
+        <div className={style.heroText}>
+          <h1>My name is Xander</h1>
+          <h3>I'm a full stack developer.</h3>
+        </div>
+      </div>
+    </BackgroundImage>
+  )
+}
 
 export default Intro
