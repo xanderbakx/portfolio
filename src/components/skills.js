@@ -13,7 +13,7 @@ import style from "../styles/skills.module.css"
 
 const Skills = () => {
   return (
-    <Container>
+    <Container maxWidth="md">
       <h1 className={style.title}>Skills</h1>
       {/* <Box className={style.box}> */}
       <Grid container spacing={1} alignItems="stretch">
