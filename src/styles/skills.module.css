@@ -1,5 +1,17 @@
+.section {
+  background-color: #a0cfd3;
+}
+
+.skillsContainer {
+  font-size: 1.1rem;
+}
+
 .title {
-  padding-top: 2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 3rem;
+  padding: 2rem 0;
   text-align: center;
 }
 
@@ -9,7 +21,10 @@
 }
 
 .list {
+  margin-left: 0;
+  padding: 0;
   list-style-type: none;
+  -webkit-padding-start: 0;
 }
 
 .description {
@@ -18,8 +33,31 @@
   text-align: center;
 }
 
+.skillWrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .card {
-  margin: 0 1rem;
-  padding: 0 1.5rem;
-  height: "100%";
+  margin: 0 4rem;
+  min-width: 20%;
+  padding: 0 1rem;
+}
+
+@media (max-width: 920px) {
+  .card {
+    text-align: center;
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 752px) {
+  .skillWrapper {
+    flex-flow: column nowrap;
+    justify-content: space-around;
+  }
+  .card {
+    /* text-align: center; */
+    margin: 0;
+  }
 }

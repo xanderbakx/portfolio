@@ -1,5 +1,13 @@
+.section {
+  background-color: #b4edd2;
+}
+
 .title {
-  padding-top: 2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 3rem;
+  padding: 2rem 0;
   text-align: center;
 }
 
@@ -18,10 +26,12 @@
   text-align: center;
 }
 
-.card {
-  margin: 0 1rem;
-  padding: 0 1.5rem;
-  height: "100%";
+.cookedImages {
+  display: flex;
+}
+
+.phoneImg {
+  max-width: 300px;
 }
 
 .techWrapper {
@@ -31,5 +41,13 @@
   flex-wrap: wrap; */
 }
 
-.techItem {
+.linkIcons {
+  display: inline-flex;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+}
+
+.icon {
+  padding: 0.3rem;
 }

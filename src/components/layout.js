@@ -1,5 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
+import "@fontsource/open-sans"
+import "@fontsource/fraunces"
+import "@fontsource/playfair-display"
 
 import Header from "./header"
 import "./layout.css"
