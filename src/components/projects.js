@@ -7,6 +7,8 @@ import LinkIcon from "@material-ui/icons/LinkRounded"
 import Cooked1 from "../images/cooked1.png"
 import Cooked2 from "../images/cooked2.png"
 import Cooked3 from "../images/cooked3.png"
+import Quaffle1 from "../images/quaffle1.png"
+import Quaffle2 from "../images/quaffle2.png"
 
 import style from "../styles/projects.module.css"
 
@@ -19,20 +21,20 @@ const Projects = () => {
 
         {/* Cook'd */}
         <h2>Cook'd</h2>
-        <div className={style.cookedImages}>
+        <div className={style.mockupImages}>
           <img
             src={Cooked1}
-            className={style.phoneImg}
+            className={style.cookedPhoneImg}
             alt="Cooked Screenshot 1"
           />
           <img
             src={Cooked2}
-            className={style.phoneImg}
+            className={style.cookedPhoneImg}
             alt="Cooked Screenshot 2"
           />
           <img
             src={Cooked3}
-            className={style.phoneImg}
+            className={style.cookedPhoneImg}
             alt="Cooked Screenshot 3"
           />
         </div>
@@ -90,6 +92,18 @@ const Projects = () => {
 
         {/* Quaffle House */}
         <h2>Quaffle House</h2>
+        <div className={style.mockupImages}>
+          <img
+            src={Quaffle1}
+            className={style.quaffleMacImg}
+            alt="Cooked Screenshot 1"
+          />
+          <img
+            src={Quaffle2}
+            className={style.quaffleMacImg}
+            alt="Cooked Screenshot 2"
+          />
+        </div>
         <div className={style.linkIcons}>
           <a
             className={style.icon}

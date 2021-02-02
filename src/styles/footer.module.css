@@ -1,0 +1,14 @@
+.section {
+  background-color: #282b28;
+}
+
+.linkIcons {
+  display: inline-flex;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+}
+
+.icon {
+  padding: 0.3rem;
+}

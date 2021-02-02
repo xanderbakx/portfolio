@@ -26,12 +26,17 @@
   text-align: center;
 }
 
-.cookedImages {
+.mockupImages {
   display: flex;
+  justify-content: center;
 }
 
-.phoneImg {
+.cookedPhoneImg {
   max-width: 300px;
+}
+
+.quaffleMacImg {
+  max-width: 500px;
 }
 
 .techWrapper {
