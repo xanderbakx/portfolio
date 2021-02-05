@@ -1,8 +1,15 @@
 import React from "react"
-import { Container } from "@material-ui/core"
+import Container from "@material-ui/core/Container"
 import EmailIcon from "@material-ui/icons/Email"
 import LinkedInIcon from "@material-ui/icons/LinkedIn"
 import GitHubIcon from "@material-ui/icons/GitHub"
+import TextField from "@material-ui/core/TextField"
+import Button from "@material-ui/core/Button"
+import {
+  withStyles,
+  createMuiTheme,
+  ThemeProvider,
+} from "@material-ui/core/styles"
 
 import style from "../styles/footer.module.css"
 
@@ -12,8 +19,48 @@ const encode = data => {
     .join("&")
 }
 
-const Footer = () => {
-  const iconColor = "#fff"
+const styles = theme => ({
+  // cssLabel: {
+  //   color: "#696969 !important",
+  // },
+  // cssOutlinedInput: {
+  //   "&$cssFocused $notchedOutline": {
+  //     color: "white !important",
+  //   },
+  // },
+  // cssFocused: {
+  //   color: "white !important",
+  // },
+  // notchedOutline: {
+  //   // borderWidth: "1px",
+  //   borderColor: "#696969 !important",
+  // },
+})
+
+const theme = createMuiTheme({
+  overrides: {
+    MuiInput: {
+      cssLabel: {
+        color: "#696969 !important",
+      },
+      cssOutlinedInput: {
+        "&$cssFocused $notchedOutline": {
+          color: "white !important",
+        },
+      },
+      cssFocused: {
+        color: "white !important",
+      },
+      notchedOutline: {
+        borderColor: "#696969 !important",
+      },
+    },
+  },
+})
+
+const Footer = props => {
+  const { classes } = props
+  const iconColor = "#e3e3e3"
 
   const [state, setState] = React.useState({})
 
@@ -36,6 +83,118 @@ const Footer = () => {
   return (
     <div className={style.section}>
       <Container maxWidth="md">
+        <h1 className={style.title}>Contact</h1>
+
+        {/* FORM */}
+        <div className={style.formWrapper}>
+          <ThemeProvider theme={theme}>
+            <form
+              className={style.contactForm}
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              onSubmit={handleSubmit}
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <p hidden>
+                <label>
+                  Don’t fill this out:{" "}
+                  <input name="bot-field" onChange={handleChange} />
+                </label>
+              </p>
+              <p>
+                <TextField
+                  className={style.formField}
+                  id="name"
+                  label="Full Name"
+                  type="text"
+                  name="name"
+                  variant="outlined"
+                  required
+                  fullWidth
+                  onChange={handleChange}
+                  InputLabelProps={{
+                    classes: {
+                      root: classes.cssLabel,
+                      focused: classes.cssFocused,
+                    },
+                  }}
+                  InputProps={{
+                    classes: {
+                      root: classes.cssOutlinedInput,
+                      focused: classes.cssFocused,
+                      notchedOutline: classes.notchedOutline,
+                    },
+                  }}
+                />
+              </p>
+              <p>
+                <TextField
+                  className={style.formField}
+                  id="email"
+                  label="Email address"
+                  type="email"
+                  name="email"
+                  variant="outlined"
+                  required
+                  fullWidth
+                  onChange={handleChange}
+                  InputLabelProps={{
+                    classes: {
+                      root: classes.cssLabel,
+                      focused: classes.cssFocused,
+                    },
+                  }}
+                  InputProps={{
+                    classes: {
+                      root: classes.cssOutlinedInput,
+                      focused: classes.cssFocused,
+                      notchedOutline: classes.notchedOutline,
+                    },
+                  }}
+                />
+              </p>
+              <p>
+                <TextField
+                  className={style.formField}
+                  id="message"
+                  label="Message"
+                  name="message"
+                  multiline
+                  rows={6}
+                  defaultValue="Hi Xander, please work for us!"
+                  variant="outlined"
+                  required
+                  fullWidth
+                  onChange={handleChange}
+                  InputLabelProps={{
+                    classes: {
+                      root: classes.cssLabel,
+                      focused: classes.cssFocused,
+                    },
+                  }}
+                  InputProps={{
+                    classes: {
+                      root: classes.cssOutlinedInput,
+                      focused: classes.cssFocused,
+                      notchedOutline: classes.notchedOutline,
+                    },
+                  }}
+                />
+              </p>
+
+              <Button
+                className={style.formButton}
+                variant="contained"
+                type="submit"
+              >
+                Send
+              </Button>
+            </form>
+          </ThemeProvider>
+        </div>
+
         <div className={style.linkIcons}>
           <a
             className={style.icon}
@@ -68,45 +227,9 @@ const Footer = () => {
             </EmailIcon>
           </a>
         </div>
-        {/* FORM */}
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          onSubmit={handleSubmit}
-        >
-          <input type="hidden" name="form-name" value="contact" />
-          <p hidden>
-            <label>
-              Don’t fill this out:{" "}
-              <input name="bot-field" onChange={handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Name:{" "}
-              <input type="text" name="name" onChange={handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Email:{" "}
-              <input type="email" name="email" onChange={handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message: <textarea name="message" onChange={handleChange} />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
       </Container>
     </div>
   )
 }
 
-export default Footer
+export default withStyles(styles)(Footer)

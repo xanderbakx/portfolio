@@ -48,9 +48,7 @@
 
 .linkIcons {
   display: inline-flex;
-  align-self: center;
   align-items: center;
-  align-content: center;
 }
 
 .icon {

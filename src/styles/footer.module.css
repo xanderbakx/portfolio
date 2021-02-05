@@ -1,14 +1,50 @@
 .section {
+  display: flex;
+  justify-content: center;
   background-color: #282b28;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 3rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.formButton {
+  align-self: center;
 }
 
 .linkIcons {
   display: inline-flex;
-  align-self: center;
   align-items: center;
   align-content: center;
 }
 
 .icon {
   padding: 0.3rem;
+  align-self: center;
+}
+
+/* .formWrapper {
+  justify-content: center;
+} */
+
+input {
+  color: #696969 !important;
+}
+
+input:focus {
+  color: #f4fffd !important;
+}
+
+textarea {
+  color: #696969 !important;
+}
+
+textarea:focus {
+  color: #f4fffd !important;
 }

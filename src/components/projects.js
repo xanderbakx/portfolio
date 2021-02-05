@@ -1,5 +1,5 @@
 import React from "react"
-import { Container } from "@material-ui/core"
+import Container from "@material-ui/core/Container"
 import GitHubIcon from "@material-ui/icons/GitHub"
 import YouTubeIcon from "@material-ui/icons/YouTube"
 import LinkIcon from "@material-ui/icons/LinkRounded"
@@ -45,7 +45,7 @@ const Projects = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <GitHubIcon htmlColor={iconColor}>Github</GitHubIcon>
+            <GitHubIcon htmlColor={iconColor}>GitHub</GitHubIcon>
           </a>
 
           <a
