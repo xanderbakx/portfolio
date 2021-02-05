@@ -9,7 +9,6 @@ import Projects from "../components/projects"
 import Footer from "../components/footer"
 
 const IndexPage = () => {
-  document.querySelectorAll(" p * div ")
   return (
     <Layout>
       <SEO title="Xander Bakx" />
