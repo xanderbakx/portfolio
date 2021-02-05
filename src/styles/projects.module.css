@@ -41,9 +41,6 @@
 
 .techWrapper {
   padding-bottom: 3rem;
-  /* display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; */
 }
 
 .linkIcons {
@@ -53,4 +50,45 @@
 
 .icon {
   padding: 0.3rem;
+}
+
+@media (max-width: 1012px) {
+  .mockupImages {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cookedPhoneImg {
+    max-width: 500px;
+  }
+
+  .quaffleMacImg {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 810px) {
+  .quaffleMacImg {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .cookedPhoneImg {
+    max-width: 300px;
+  }
+
+  .quaffleMacImg {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 390px) {
+  .cookedPhoneImg {
+    max-width: 280px;
+  }
+
+  .quaffleMacImg {
+    max-width: 300px;
+  }
 }

@@ -1,6 +1,5 @@
 import React from "react"
 import Container from "@material-ui/core/Container"
-import EmailIcon from "@material-ui/icons/Email"
 import LinkedInIcon from "@material-ui/icons/LinkedIn"
 import GitHubIcon from "@material-ui/icons/GitHub"
 import TextField from "@material-ui/core/TextField"
@@ -20,21 +19,21 @@ const encode = data => {
 }
 
 const styles = theme => ({
-  // cssLabel: {
-  //   color: "#696969 !important",
-  // },
-  // cssOutlinedInput: {
-  //   "&$cssFocused $notchedOutline": {
-  //     color: "white !important",
-  //   },
-  // },
-  // cssFocused: {
-  //   color: "white !important",
-  // },
-  // notchedOutline: {
-  //   // borderWidth: "1px",
-  //   borderColor: "#696969 !important",
-  // },
+  cssLabel: {
+    color: "#696969 !important",
+  },
+  cssOutlinedInput: {
+    "&$cssFocused $notchedOutline": {
+      color: "white !important",
+    },
+  },
+  cssFocused: {
+    color: "white !important",
+  },
+  notchedOutline: {
+    // borderWidth: "1px",
+    borderColor: "#696969 !important",
+  },
 })
 
 const theme = createMuiTheme({
@@ -202,7 +201,7 @@ const Footer = props => {
             target="_blank"
             rel="noreferrer"
           >
-            <GitHubIcon fontSize="large" htmlColor={iconColor}>
+            <GitHubIcon style={{ fontSize: 32 }} htmlColor={iconColor}>
               Github
             </GitHubIcon>
           </a>
@@ -213,18 +212,8 @@ const Footer = props => {
             rel="noreferrer"
           >
             <LinkedInIcon fontSize="large" htmlColor={iconColor}>
-              Github
+              LinkedIn
             </LinkedInIcon>
-          </a>
-          <a
-            className={style.icon}
-            href="mailto:xanderbakx@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <EmailIcon fontSize="large" htmlColor={iconColor}>
-              Github
-            </EmailIcon>
           </a>
         </div>
       </Container>

@@ -1,6 +1,4 @@
 .section {
-  display: flex;
-  justify-content: center;
   background-color: #282b28;
 }
 
@@ -14,24 +12,10 @@
   text-align: center;
 }
 
-.formButton {
-  align-self: center;
+.contactForm {
+  display: flex;
+  flex-direction: column;
 }
-
-.linkIcons {
-  display: inline-flex;
-  align-items: center;
-  align-content: center;
-}
-
-.icon {
-  padding: 0.3rem;
-  align-self: center;
-}
-
-/* .formWrapper {
-  justify-content: center;
-} */
 
 input {
   color: #696969 !important;
@@ -47,4 +31,22 @@ textarea {
 
 textarea:focus {
   color: #f4fffd !important;
+}
+
+.formButton {
+  align-self: center;
+}
+
+.linkIcons {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  padding: 0.3rem;
+  align-self: center;
 }
