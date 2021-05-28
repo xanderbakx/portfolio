@@ -11,7 +11,6 @@ const Skills = () => {
           <div className={style.card}>
             <h2>Front End</h2>
             <ul className={style.list}>
-              {/* <img src={react} alt="React Logo" /> */}
               <li>React</li>
               <li>React Native</li>
               <li>Redux</li>
@@ -34,7 +33,7 @@ const Skills = () => {
           </div>
 
           <div className={style.card}>
-            <h2>Dev Ops</h2>
+            <h2>Other</h2>
             <ul className={style.list}>
               <li>Git</li>
               <li>GitHub</li>

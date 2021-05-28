@@ -19,6 +19,7 @@
 
 input {
   color: #696969 !important;
+  margin: 2rem;
 }
 
 input:focus {

@@ -69,7 +69,7 @@ const Projects = () => {
         <p>
           Our team decided to create this mobile app using React Native and
           Expo. This gave us a clean starting point to create all the features
-          we wanted within the two week timeline. Some of the user features
+          we wanted within the two week sprint. Some of the user features
           include: posting recipes with photos, ingredients, and directions, a
           global and personalized feed to explore other users recipes, liking
           and commenting on recipes, viewing your own and other users profile
@@ -127,16 +127,16 @@ const Projects = () => {
 
         <p>
           Quaffle house is a mock e-commerce website built as our first group
-          project as Fullstack Academy. Myself and two others built this site
+          project at Fullstack Academy. Myself and two others built this site
           using the core languages and technologies taught at Fullstack.
         </p>
         <p>
           This project taught us how to develop in teams and use industry
           standard tools for collaboration and project management. We used
-          GitHub's Project feature to manage our issue tracking, required pull
-          requests to be reviewed and approved before merging, and we created
-          roles that each member of the team follow to ensure all members were
-          working efficiently and effectively.
+          GitHub's Project feature to manage our issue tracking, pull requests
+          to be reviewed and approved before merging, and we created roles that
+          each member of the team follow to ensure all members were working
+          efficiently and effectively.
         </p>
         <div className={style.techWrapper}>
           <div className={style.techItem}>

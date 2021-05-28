@@ -13,7 +13,6 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Xander Bakx" />
       <Intro />
-      {/* <Img fluid={data.cooked.childImageSharp.fluid} alt="Cooked1" /> */}
       <Skills />
       <Projects />
       <Footer />
