@@ -80,7 +80,7 @@ const Footer = props => {
     })
   }
   return (
-    <div className={style.section}>
+    <div className={style.section} id="contact">
       <Container maxWidth="md">
         <h1 className={style.title}>Contact</h1>
 
@@ -102,86 +102,89 @@ const Footer = props => {
                   <input name="bot-field" onChange={handleChange} />
                 </label>
               </p>
-              <p>
-                <TextField
-                  className={style.formField}
-                  id="name"
-                  label="Full Name"
-                  type="text"
-                  name="name"
-                  variant="outlined"
-                  required
-                  fullWidth
-                  onChange={handleChange}
-                  InputLabelProps={{
-                    classes: {
-                      root: classes.cssLabel,
-                      focused: classes.cssFocused,
-                    },
-                  }}
-                  InputProps={{
-                    classes: {
-                      root: classes.cssOutlinedInput,
-                      focused: classes.cssFocused,
-                      notchedOutline: classes.notchedOutline,
-                    },
-                  }}
-                />
-              </p>
-              <p>
-                <TextField
-                  className={style.formField}
-                  id="email"
-                  label="Email address"
-                  type="email"
-                  name="email"
-                  variant="outlined"
-                  required
-                  fullWidth
-                  onChange={handleChange}
-                  InputLabelProps={{
-                    classes: {
-                      root: classes.cssLabel,
-                      focused: classes.cssFocused,
-                    },
-                  }}
-                  InputProps={{
-                    classes: {
-                      root: classes.cssOutlinedInput,
-                      focused: classes.cssFocused,
-                      notchedOutline: classes.notchedOutline,
-                    },
-                  }}
-                />
-              </p>
-              <p>
-                <TextField
-                  className={style.formField}
-                  id="message"
-                  label="Message"
-                  name="message"
-                  multiline
-                  rows={6}
-                  defaultValue="Hi Xander, please work for us!"
-                  variant="outlined"
-                  required
-                  fullWidth
-                  onChange={handleChange}
-                  InputLabelProps={{
-                    classes: {
-                      root: classes.cssLabel,
-                      focused: classes.cssFocused,
-                    },
-                  }}
-                  InputProps={{
-                    classes: {
-                      root: classes.cssOutlinedInput,
-                      focused: classes.cssFocused,
-                      notchedOutline: classes.notchedOutline,
-                    },
-                  }}
-                />
-              </p>
+              {/* <p> */}
+              <TextField
+                className={style.formField}
+                id="name"
+                label="Full Name"
+                type="text"
+                name="name"
+                variant="outlined"
+                margin="normal"
+                required
+                fullWidth
+                onChange={handleChange}
+                InputLabelProps={{
+                  classes: {
+                    root: classes.cssLabel,
+                    focused: classes.cssFocused,
+                  },
+                }}
+                InputProps={{
+                  classes: {
+                    root: classes.cssOutlinedInput,
+                    focused: classes.cssFocused,
+                    notchedOutline: classes.notchedOutline,
+                  },
+                }}
+              />
+              {/* </p>
+              <p> */}
+              <TextField
+                className={style.formField}
+                id="email"
+                label="Email address"
+                type="email"
+                name="email"
+                variant="outlined"
+                margin="normal"
+                required
+                fullWidth
+                onChange={handleChange}
+                InputLabelProps={{
+                  classes: {
+                    root: classes.cssLabel,
+                    focused: classes.cssFocused,
+                  },
+                }}
+                InputProps={{
+                  classes: {
+                    root: classes.cssOutlinedInput,
+                    focused: classes.cssFocused,
+                    notchedOutline: classes.notchedOutline,
+                  },
+                }}
+              />
+              {/* </p> */}
+              {/* <p> */}
+              <TextField
+                className={style.formField}
+                id="message"
+                label="Message"
+                name="message"
+                multiline
+                rows={6}
+                defaultValue="Hi Xander, please work for us!"
+                variant="outlined"
+                margin="normal"
+                required
+                fullWidth
+                onChange={handleChange}
+                InputLabelProps={{
+                  classes: {
+                    root: classes.cssLabel,
+                    focused: classes.cssFocused,
+                  },
+                }}
+                InputProps={{
+                  classes: {
+                    root: classes.cssOutlinedInput,
+                    focused: classes.cssFocused,
+                    notchedOutline: classes.notchedOutline,
+                  },
+                }}
+              />
+              {/* </p> */}
 
               <Button
                 className={style.formButton}
@@ -222,3 +225,4 @@ const Footer = props => {
 }
 
 export default withStyles(styles)(Footer)
+// export default Footer
