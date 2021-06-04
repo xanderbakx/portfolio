@@ -26,7 +26,6 @@ const Intro = () => {
         <div className={style.heroText}>
           <h1>My name is Xander</h1>
           <h3>I'm a full stack developer.</h3>
-          {/* <Link to="/#skills">Click</Link> */}
         </div>
       </div>
     </BackgroundImage>

@@ -3,13 +3,11 @@ import PropTypes from "prop-types"
 import "@fontsource/open-sans"
 import "@fontsource/playfair-display"
 
-import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
   return (
     <>
-      {/* <Header /> */}
       <div>
         <main>{children}</main>
       </div>

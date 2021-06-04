@@ -1,0 +1,25 @@
+.header {
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin: 0 auto;
+  padding: 0.5rem 1.45rem;
+  background-color: #282b28;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 0.4rem 2rem;
+}
+
+.link:hover {
+  color: #495981;
+}

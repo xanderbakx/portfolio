@@ -9,15 +9,71 @@ import Cooked2 from "../images/cooked2.png"
 import Cooked3 from "../images/cooked3.png"
 import Quaffle1 from "../images/quaffle1.png"
 import Quaffle2 from "../images/quaffle2.png"
+import Collabio1 from '../images/collabio1.png'
+import Collabio2 from '../images/collabio2.png'
 
 import style from "../styles/projects.module.css"
 
 const Projects = () => {
   const iconColor = "#9A7AA0"
   return (
-    <div className={style.section}>
+    <div className={style.section} id="projects">
       <Container maxWidth="md">
         <h1 className={style.title}>Projects</h1>
+
+        {/* Collabio */}
+        <h2>Collabio</h2>
+        <div className={style.mockupImages}>
+        <img
+            src={Collabio1}
+            className={style.quaffleMacImg}
+            alt="Collabio Screenshot 1"
+          />
+          <img
+            src={Collabio2}
+            className={style.quaffleMacImg}
+            alt="Collabio Screenshot 2"
+          />
+        </div>
+        <div className={style.linkIcons}>
+          <a
+            className={style.icon}
+            href="https://github.com/xanderbakx/collabiodocs"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GitHubIcon htmlColor={iconColor}>Github</GitHubIcon>
+          </a>
+          <a
+            className={style.icon}
+            href="https://collabiodocs.herokuapp.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <LinkIcon fontSize="large" htmlColor={iconColor}>
+              Link
+            </LinkIcon>
+          </a>
+        </div>
+
+        <p>
+          Collabio is a rich-text document editor similar to Google Docs. Users can signup/login using Auth0 authentication and immediately start creating new documents, edit and view existing documents, and collaboratively work on documents together. Users can save those documents and see them in the documents grid anytime they login. 
+        </p>
+        <p>
+          This is a project I built to test my knowledge of building every element of a full-stack application by myself. I had worked on projects in the past working in teams and wanted to explore what it would be like to build something from the ground up that I claim as my own. This process allowed me to deepen my understanding of the technologies I had worked with before and introduce myself to new ones as well. This was my first time using Auth0, MongoDB, Mongoose, and Slate. It was also my first time creating and closing issues independently, and doing my own research debugging and creating new features.
+        </p>
+
+        <div className={style.techWrapper}>
+          <div className={style.techItem}>
+            <b>Front End:</b> React, Redux, Slate, Styled Components
+          </div>
+          <div className={style.techItem}>
+            <b>Back End:</b> Node.js, Express, MongoDB, Mongoose
+          </div>
+          <div className={style.techItem}>
+            <b>Additional Technologies & Packages:</b> Heroku, Babel, Axios, Socket.io, Passport, Auth0
+          </div>
+        </div>
 
         {/* Cook'd */}
         <h2>Cook'd</h2>

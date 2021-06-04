@@ -80,7 +80,7 @@ const Footer = props => {
     })
   }
   return (
-    <div className={style.section}>
+    <div className={style.section} id="contact">
       <Container maxWidth="md">
         <h1 className={style.title}>Contact</h1>
 
