@@ -7,15 +7,14 @@ import Projects from "../components/projects"
 import Footer from "../components/footer"
 import Header from "../components/header"
 
-
 const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Xander Bakx" />
       <Header />
       <Intro />
-      <Skills />
       <Projects />
+      <Skills />
       <Footer />
     </Layout>
   )

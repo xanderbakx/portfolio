@@ -4,13 +4,15 @@ import GitHubIcon from "@material-ui/icons/GitHub"
 import YouTubeIcon from "@material-ui/icons/YouTube"
 import LinkIcon from "@material-ui/icons/LinkRounded"
 
+import Wmc1 from "../images/wmc1.png"
+import Wmc2 from "../images/wmc2.png"
 import Cooked1 from "../images/cooked1.png"
 import Cooked2 from "../images/cooked2.png"
 import Cooked3 from "../images/cooked3.png"
 import Quaffle1 from "../images/quaffle1.png"
 import Quaffle2 from "../images/quaffle2.png"
-import Collabio1 from '../images/collabio1.png'
-import Collabio2 from '../images/collabio2.png'
+import Collabio1 from "../images/collabio1.png"
+import Collabio2 from "../images/collabio2.png"
 
 import style from "../styles/projects.module.css"
 
@@ -21,10 +23,60 @@ const Projects = () => {
       <Container maxWidth="md">
         <h1 className={style.title}>Projects</h1>
 
+        {/* West Marin Compost */}
+        <h2>West Marin Compost</h2>
+        <div className={style.mockupImages}>
+          <img
+            src={Wmc1}
+            className={style.quaffleMacImg}
+            alt="WMC Screenshot 1"
+          />
+          <img
+            src={Wmc2}
+            className={style.quaffleMacImg}
+            alt="WMC Screenshot 2"
+          />
+        </div>
+        <div className={style.linkIcons}>
+          <a
+            className={style.icon}
+            href="https://github.com/xanderbakx/wmc"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GitHubIcon htmlColor={iconColor}>Github</GitHubIcon>
+          </a>
+          <a
+            className={style.icon}
+            href="https://www.westmarincompost.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <LinkIcon fontSize="large" htmlColor={iconColor}>
+              Link
+            </LinkIcon>
+          </a>
+        </div>
+
+        <p>West Marin Compost</p>
+
+        <div className={style.techWrapper}>
+          <div className={style.techItem}>
+            <b>Front End:</b> React, Redux, Slate, Styled Components
+          </div>
+          <div className={style.techItem}>
+            <b>Back End:</b> Node.js, Express, MongoDB, Mongoose
+          </div>
+          <div className={style.techItem}>
+            <b>Additional Technologies & Packages:</b> Heroku, Babel, Axios,
+            Socket.io, Passport, Auth0
+          </div>
+        </div>
+
         {/* Collabio */}
         <h2>Collabio</h2>
         <div className={style.mockupImages}>
-        <img
+          <img
             src={Collabio1}
             className={style.quaffleMacImg}
             alt="Collabio Screenshot 1"
@@ -57,10 +109,23 @@ const Projects = () => {
         </div>
 
         <p>
-          Collabio is a rich-text document editor similar to Google Docs. Users can signup/login using Auth0 authentication and immediately start creating new documents, edit and view existing documents, and collaboratively work on documents together. Users can save those documents and see them in the documents grid anytime they login. 
+          Collabio is a rich-text document editor similar to Google Docs. Users
+          can signup/login using Auth0 authentication and immediately start
+          creating new documents, edit and view existing documents, and
+          collaboratively work on documents together. Users can save those
+          documents and see them in the documents grid anytime they login.
         </p>
         <p>
-          This is a project I built to test my knowledge of building every element of a full-stack application by myself. I had worked on projects in the past working in teams and wanted to explore what it would be like to build something from the ground up that I claim as my own. This process allowed me to deepen my understanding of the technologies I had worked with before and introduce myself to new ones as well. This was my first time using Auth0, MongoDB, Mongoose, and Slate. It was also my first time creating and closing issues independently, and doing my own research debugging and creating new features.
+          This is a project I built to test my knowledge of building every
+          element of a full-stack application by myself. I had worked on
+          projects in the past working in teams and wanted to explore what it
+          would be like to build something from the ground up that I claim as my
+          own. This process allowed me to deepen my understanding of the
+          technologies I had worked with before and introduce myself to new ones
+          as well. This was my first time using Auth0, MongoDB, Mongoose, and
+          Slate. It was also my first time creating and closing issues
+          independently, and doing my own research debugging and creating new
+          features.
         </p>
 
         <div className={style.techWrapper}>
@@ -71,7 +136,8 @@ const Projects = () => {
             <b>Back End:</b> Node.js, Express, MongoDB, Mongoose
           </div>
           <div className={style.techItem}>
-            <b>Additional Technologies & Packages:</b> Heroku, Babel, Axios, Socket.io, Passport, Auth0
+            <b>Additional Technologies & Packages:</b> Heroku, Babel, Axios,
+            Socket.io, Passport, Auth0
           </div>
         </div>
 
