@@ -16,10 +16,10 @@
 .link {
   color: white;
   text-decoration: none;
-  font-size: 2rem;
+  /* font-size: 2rem; */
   padding: 0.4rem 2rem;
 }
 
 .link:hover {
-  color: #495981;
+  color: #96a8d6;
 }

@@ -58,20 +58,21 @@ const Projects = () => {
           </a>
         </div>
 
-        <p>West Marin Compost</p>
+        <p>
+          West Marin Compost is a static website built with Gatsby. This website
+          was built for a client to replace their old site. I continually update
+          content and components as requested by the client. Code, design,
+          hosting all done myself.
+        </p>
 
         <div className={style.techWrapper}>
           <div className={style.techItem}>
-            <b>Front End:</b> React, Redux, Slate, Styled Components
-          </div>
-          <div className={style.techItem}>
-            <b>Back End:</b> Node.js, Express, MongoDB, Mongoose
-          </div>
-          <div className={style.techItem}>
-            <b>Additional Technologies & Packages:</b> Heroku, Babel, Axios,
-            Socket.io, Passport, Auth0
+            <b>Technologies:</b> Gatsby, React, Bootstrap, Styled Components,
+            Netlify
           </div>
         </div>
+
+        <hr />
 
         {/* Collabio */}
         <h2>Collabio</h2>
@@ -140,6 +141,8 @@ const Projects = () => {
             Socket.io, Passport, Auth0
           </div>
         </div>
+
+        <hr />
 
         {/* Cook'd */}
         <h2>Cook'd</h2>
@@ -211,6 +214,8 @@ const Projects = () => {
             store uploaded images, Babel, Axios, Socket.io, Passport, OAuth
           </div>
         </div>
+
+        <hr />
 
         {/* Quaffle House */}
         <h2>Quaffle House</h2>
