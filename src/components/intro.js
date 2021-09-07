@@ -19,8 +19,8 @@ const Intro = () => {
             technologies.
           </h3>
           <h4>
-            In my free time I enjoy rock climbing, cooking, running, video
-            games, and beer.
+            In my free time I enjoy rock climbing, cooking, running, biking, and
+            video games.
           </h4>
           <div className={style.icons}>
             <a
